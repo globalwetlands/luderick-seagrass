@@ -75,7 +75,7 @@ Each category in COCO JSON format includes the following fields:
     "iscrowd": 0,
     "area": 625872,
     "segmentation": [
-      [ 5, 76, 154, 80, ... ]
+      [ 5, 76, 154, 80, 409, 76, 471, 86, 546, 110 ]
     ]
   }],
   "images": [{
