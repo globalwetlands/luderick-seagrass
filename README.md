@@ -20,7 +20,7 @@ This dataset comprises of annotated footage of _Girella tricuspidata_ in two est
 | Luderick Seagrass Tallebudgera | 4bUBoZmvV | 6       | novel test    | 1023                 | 43                | 1066  |
 | Total                          |           |         |               | 9304                 | 125               | 9429  |
 
-Additional details can be found in `dataset_images.csv`, including data collection deployment dates and geocoordinates.
+Additional details can be found in [`dataset_images.csv`](dataset_images.csv), including data collection deployment dates and geocoordinates.
 
 ## Dataset presentation
 
