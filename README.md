@@ -22,15 +22,14 @@ This dataset includes 9429 annotations and 4280 images which can be used for tra
 | Luderick Seagrass Tallebudgera | 4bUBoZmvV | 6       | novel test    | 1023                 | 43                | 1066  |
 | Total                          |           |         |               | 9304                 | 125               | 9429  |
 
-Each annotation includes object instance annotations which consist of the following key fields: Labels are provided as a common name: either "luderick" for _Girella tricuspidata_ or "bream" for _Acanthopagrus australis_; Bounding boxes that enclose the species in each frame are provided in "[x, y, width, height]" format, in pixel units; Segmentation masks which outline the species as a polygon are provided as a list of pixel coordinates in the format "[x, y, x, y, ...]";
-The corresponding image is provided as an image filename. All image coordinates (bounding box and segmentation masks) are measured from the top left image corner and are 0-indexed.
+Each annotation includes object instance annotations which consist of the following key fields: Labels are provided as a common name: either "luderick" for _Girella tricuspidata_ or "bream" for _Acanthopagrus australis_; Bounding boxes that enclose the species in each frame are provided in "[x, y, width, height]" format, in pixel units; Segmentation masks which outline the species as a polygon are provided as a list of pixel coordinates in the format "[x, y, x, y, ...]"; The corresponding image is provided as an image filename. All image coordinates (bounding box and segmentation masks) are measured from the top left image corner and are 0-indexed.
 
 Annotations are provided in both CSV format and [COCO JSON format](https://cocodataset.org/#format-data) which is a commonly used data format for integration with object detection frameworks including PyTorch and TensorFlow.
 
-Additional details for each image can be found in [`dataset_images.csv`](dataset_images.csv), including data collection deployment dates, geo-coordinates and habitat type.
-
 Images are included in a ZIP archive which can be downloaded from the following URL:  
 https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/luderick-seagrass.zip
+
+Additional details for each image can be found in [`dataset_images.csv`](dataset_images.csv), including data collection deployment dates, geo-coordinates and habitat type.
 
 ### COCO JSON
 
