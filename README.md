@@ -1,0 +1,117 @@
+# Annotated videos of luderick from estuaries in southeast Queensland, Australia
+
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+![](luderick-example.jpg)
+
+## Overview
+
+This dataset comprises of annotated footage of _Girella tricuspidata_ in two estuary systems in south East Queensland, Australia. This data is suitable for a range of classification and object detection research in unconstrained underwater environments. The raw data was obtained using submerged action cameras (Haldex Sports Action Cam HD 1080p) to collect video footage in the Tweed River estuary in southeast Queensland (-28.169438, 153.547594), between February and July 2019. Additional footage was collected from seagrass meadows in a separate estuary system in Tallebudgera Creek (-28.109721, 153.448975). Each sampling day, six cameras were deployed for 1 h over a variety of seagrass patches; the angle and placement of cameras was varied among deployment to ensure a variety of backgrounds and fish angles. Videos were trimmed for training to contain only footage of luderick (the target species for the study) and split into 5 frames per second.
+
+## Summary
+
+| Dataset                        | ID        | Version | Suggested use | Luderick Annotations | Bream Annotations | Total |
+| ------------------------------ | --------- | ------- | ------------- | -------------------- | ----------------- | ----- |
+| Luderick Seagrass Jack Evans A | Wvo7U_76t | 8       | training      | 6649                 | 53                | 6702  |
+| Luderick Seagrass Jack Evans B | OmKwIVpe- | 8       | test          | 1632                 | 29                | 1661  |
+| Luderick Seagrass Tallebudgera | 4bUBoZmvV | 6       | novel test    | 1023                 | 43                | 1066  |
+| Total                          |           |         |               | 9304                 | 125               | 9429  |
+
+Additional details can be found in `dataset_images.csv`, including data collection deployment dates and geocoordinates.
+
+## Dataset presentation
+
+This dataset includes 9429 annotations and 4280 images which are organised into 3 sub-datasets.
+
+Each set of dataset annotations includes object instance annotations which consist of a corresponding image, label, bounding box and segmentation mask which can be used for training object detection deep learning models and other related computer vision tasks.
+
+Annotations are provided in both [COCO JSON format](https://cocodataset.org/#format-data) and CSV format.
+
+Images are included in a ZIP archive which can be downloaded from the following URL:  
+https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/luderick-seagrass.zip
+
+### COCO JSON
+
+Each annotation in COCO JSON format includes the following fields:
+
+| Key          | Description                                                                         |
+| ------------ | ----------------------------------------------------------------------------------- |
+| id           | INT annotation ID                                                                   |
+| category_id  | INT category ID                                                                     |
+| image_id     | INT image ID                                                                        |
+| bbox         | ARRAY [x, y, width, height] of bounding box in px                                   |
+| area         | INT area of bounding box in pixels squared                                          |
+| segmentation | STR segmentation polygon coordinates in format "[[x, y, x, y, ...]]"                |
+| iscrowd      | INT 0 or 1. A value of 1 indicated the annotation includes more than one individual |
+
+Each image in COCO JSON format includes the following fields:
+
+| Key       | Description           |
+| --------- | --------------------- |
+| id        | INT image ID          |
+| height    | INT image height (px) |
+| width     | INT image width (px)  |
+| file_name | STR image filename    |
+
+Each category in COCO JSON format includes the following fields:
+
+| Key  | Description                             |
+| ---- | --------------------------------------- |
+| id   | INT category ID                         |
+| name | STR category name (species common name) |
+
+#### COCO JSON Example
+
+```json
+{
+  "annotations": [{
+    "id": 0,
+    "image_id": 0,
+    "category_id": 1,
+    "bbox": [ 0, 76, 624, 1003 ],
+    "iscrowd": 0,
+    "area": 625872,
+    "segmentation": [
+      [ 5, 76, 154, 80, ... ]
+    ]
+  }],
+  "images": [{
+      "file_name": "20190618_1.mov_5fps_000001.jpg",
+      "height": 1080,
+      "width": 1920,
+      "id": 0,
+      "license": 1
+    }
+  ],
+  "categories": [{
+    "name": "luderick",
+    "id": 1
+  }]
+```
+
+### CSV
+
+For each annotation in CSV format, the following columns are provided:
+
+| Column       | Description                                                          |
+| ------------ | -------------------------------------------------------------------- |
+| id           | INT annotation ID                                                    |
+| category     | STR name of category (luderick/bream)                                |
+| category_id  | INT category ID                                                      |
+| image        | STR image file name                                                  |
+| image_id     | INT image ID                                                         |
+| bbox_x       | INT minimum x pixel coordinate of bounding box                       |
+| bbox_y       | INT minimum y pixel coordinate of bounding box                       |
+| bbox_w       | INT width of bounding box in pixels                                  |
+| bbox_h       | INT height of bounding box in pixels                                 |
+| area         | INT area of bounding box in pixels squared                           |
+| segmentation | STR segmentation polygon coordinates in format "[[x, y, x, y, ...]]" |
+
+#### CSV Example
+
+| id  | category | category_id | image                          | image_id | bbox_x | bbox_y | bbox_w | bbox_h | area   | segmentation      |
+| --- | -------- | ----------- | ------------------------------ | -------- | ------ | ------ | ------ | ------ | ------ | ----------------- |
+| 0   | luderick | 1           | 20190618_1.mov_5fps_000001.jpg | 0        | 0      | 76     | 624    | 1003   | 625872 | "[[5, 76, ... ]]" |
