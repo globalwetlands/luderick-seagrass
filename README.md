@@ -11,7 +11,9 @@
 
 This dataset comprises of annotated footage of _Girella tricuspidata_ in two estuary systems in south East Queensland, Australia. This data is suitable for a range of classification and object detection research in unconstrained underwater environments. The raw data was obtained using submerged action cameras (Haldex Sports Action Cam HD 1080p) to collect video footage in the Tweed River estuary in southeast Queensland (-28.169438, 153.547594), between February and July 2019. Additional footage was collected from seagrass meadows in a separate estuary system in Tallebudgera Creek (-28.109721, 153.448975). Each sampling day, six cameras were deployed for 1 h over a variety of seagrass patches; the angle and placement of cameras was varied among deployment to ensure a variety of backgrounds and fish angles. Videos were trimmed for training to contain only footage of luderick (the target species for the study) and split into 5 frames per second.
 
-## Summary
+## Dataset presentation
+
+This dataset includes 9429 annotations and 4280 images which can be used for training object detection deep learning models and other related computer vision tasks. The dataset is organised into 3 sub-datasets that have been allocated for training, test and novel test purposes.
 
 | Dataset                        | ID        | Version | Suggested use | Luderick Annotations | Bream Annotations | Total |
 | ------------------------------ | --------- | ------- | ------------- | -------------------- | ----------------- | ----- |
@@ -20,15 +22,12 @@ This dataset comprises of annotated footage of _Girella tricuspidata_ in two est
 | Luderick Seagrass Tallebudgera | 4bUBoZmvV | 6       | novel test    | 1023                 | 43                | 1066  |
 | Total                          |           |         |               | 9304                 | 125               | 9429  |
 
-Additional details can be found in [`dataset_images.csv`](dataset_images.csv), including data collection deployment dates and geocoordinates.
+Each annotation includes object instance annotations which consist of the following key fields: Labels are provided as a common name: either "luderick" for _Girella tricuspidata_ or "bream" for _Acanthopagrus australis_; Bounding boxes that enclose the species in each frame are provided in "[x, y, width, height]" format, in pixel units; Segmentation masks which outline the species as a polygon are provided as a list of pixel coordinates in the format "[x, y, x, y, ...]";
+The corresponding image is provided as an image filename. All image coordinates (bounding box and segmentation masks) are measured from the top left image corner and are 0-indexed.
 
-## Dataset presentation
+Annotations are provided in both CSV format and [COCO JSON format](https://cocodataset.org/#format-data) which is a commonly used data format for integration with object detection frameworks including PyTorch and TensorFlow.
 
-This dataset includes 9429 annotations and 4280 images which are organised into 3 sub-datasets.
-
-Each set of dataset annotations includes object instance annotations which consist of a corresponding image, label, bounding box and segmentation mask which can be used for training object detection deep learning models and other related computer vision tasks.
-
-Annotations are provided in both [COCO JSON format](https://cocodataset.org/#format-data) and CSV format.
+Additional details for each image can be found in [`dataset_images.csv`](dataset_images.csv), including data collection deployment dates, geo-coordinates and habitat type.
 
 Images are included in a ZIP archive which can be downloaded from the following URL:  
 https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/luderick-seagrass.zip
