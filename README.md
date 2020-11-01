@@ -26,7 +26,7 @@ Each annotation includes object instance annotations which consist of the follow
 
 Annotations are provided in both CSV format and [COCO JSON format](https://cocodataset.org/#format-data) which is a commonly used data format for integration with object detection frameworks including PyTorch and TensorFlow.
 
-Images are included in a ZIP archive which can be downloaded from the following URL:  
+**Images are included in a ZIP archive which can be downloaded from the following URL:**  
 https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/luderick-seagrass.zip
 
 Additional details for each image can be found in [`dataset_images.csv`](dataset_images.csv), including data collection deployment dates, geo-coordinates and habitat type.
