@@ -15,12 +15,12 @@ This dataset comprises of annotated footage of _Girella tricuspidata_ in two est
 
 This dataset includes 9429 annotations and 4280 images which can be used for training object detection deep learning models and other related computer vision tasks. The dataset is organised into 3 sub-datasets that have been allocated for training, test and novel test purposes.
 
-| Dataset                        | ID        | Raw Videos                      | Version | Suggested use | Luderick Annotations | Bream Annotations | Total |
-| ------------------------------ | --------- | ------------------------------- | ------- | ------------- | -------------------- | ----------------- | ----- |
-| Luderick Seagrass Jack Evans A | Wvo7U_76t | [Download][jack evans a videos] | 8       | training      | 6649                 | 53                | 6702  |
-| Luderick Seagrass Jack Evans B | OmKwIVpe- | [Download][jack evans b videos] | 8       | test          | 1632                 | 29                | 1661  |
-| Luderick Seagrass Tallebudgera | 4bUBoZmvV | [Download][tallebudgera videos] | 6       | novel test    | 1023                 | 43                | 1066  |
-| Total                          |           |                                 |         | 9304          | 125                  | 9429              |
+| Dataset                        | ID        | Raw Videos                              | Version | Suggested use | Luderick Annotations | Bream Annotations | Total |
+| ------------------------------ | --------- | --------------------------------------- | ------- | ------------- | -------------------- | ----------------- | ----- |
+| Luderick Seagrass Jack Evans A | Wvo7U_76t | [Download (1.3GB)][jack evans a videos] | 8       | training      | 6649                 | 53                | 6702  |
+| Luderick Seagrass Jack Evans B | OmKwIVpe- | [Download (1.1GB)][jack evans b videos] | 8       | test          | 1632                 | 29                | 1661  |
+| Luderick Seagrass Tallebudgera | 4bUBoZmvV | [Download (576MB)][tallebudgera videos] | 6       | novel test    | 1023                 | 43                | 1066  |
+| Total                          |           |                                         |         | 9304          | 125                  | 9429              |
 
 <!-- Video .zip Links -->
 
