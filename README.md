@@ -15,12 +15,18 @@ This dataset comprises of annotated footage of _Girella tricuspidata_ in two est
 
 This dataset includes 9429 annotations and 4280 images which can be used for training object detection deep learning models and other related computer vision tasks. The dataset is organised into 3 sub-datasets that have been allocated for training, test and novel test purposes.
 
-| Dataset                        | ID        | Version | Suggested use | Luderick Annotations | Bream Annotations | Total |
-| ------------------------------ | --------- | ------- | ------------- | -------------------- | ----------------- | ----- |
-| Luderick Seagrass Jack Evans A | Wvo7U_76t | 8       | training      | 6649                 | 53                | 6702  |
-| Luderick Seagrass Jack Evans B | OmKwIVpe- | 8       | test          | 1632                 | 29                | 1661  |
-| Luderick Seagrass Tallebudgera | 4bUBoZmvV | 6       | novel test    | 1023                 | 43                | 1066  |
-| Total                          |           |         |               | 9304                 | 125               | 9429  |
+| Dataset                        | ID        | Raw Videos                      | Version | Suggested use | Luderick Annotations | Bream Annotations | Total |
+| ------------------------------ | --------- | ------------------------------- | ------- | ------------- | -------------------- | ----------------- | ----- |
+| Luderick Seagrass Jack Evans A | Wvo7U_76t | [Download][jack evans a videos] | 8       | training      | 6649                 | 53                | 6702  |
+| Luderick Seagrass Jack Evans B | OmKwIVpe- | [Download][jack evans b videos] | 8       | test          | 1632                 | 29                | 1661  |
+| Luderick Seagrass Tallebudgera | 4bUBoZmvV | [Download][tallebudgera videos] | 6       | novel test    | 1023                 | 43                | 1066  |
+| Total                          |           |                                 |         | 9304          | 125                  | 9429              |
+
+<!-- Video .zip Links -->
+
+[jack evans a videos]: https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/videos/Wvo7U_76t.zip
+[jack evans b videos]: https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/videos/OmKwIVpe-.zip
+[tallebudgera videos]: https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/videos/4bUBoZmvV.zip
 
 Each annotation includes object instance annotations which consist of the following key fields: Labels are provided as a common name: either "luderick" for _Girella tricuspidata_ or "bream" for _Acanthopagrus australis_; Bounding boxes that enclose the species in each frame are provided in "[x, y, width, height]" format, in pixel units; Segmentation masks which outline the species as a polygon are provided as a list of pixel coordinates in the format "[x, y, x, y, ...]"; The corresponding image is provided as an image filename. All image coordinates (bounding box and segmentation masks) are measured from the top left image corner and are 0-indexed.
 
@@ -110,6 +116,6 @@ For each annotation in CSV format, the following columns are provided:
 
 #### CSV Example
 
-| id  | category | category_id | image                          | image_id | bbox_x | bbox_y | bbox_w | bbox_h | area   | segmentation      |
-| --- | -------- | ----------- | ------------------------------ | -------- | ------ | ------ | ------ | ------ | ------ | ----------------- |
-| 0   | luderick | 1           | 20190618_1.mov_5fps_000001.jpg | 0        | 0      | 76     | 624    | 1003   | 625872 | "[[5, 76, ... ]]" |
+| id  | category | category_id | image                          | image_id | bbox_x | bbox_y | bbox_w | bbox_h | area   | segmentation     |
+| --- | -------- | ----------- | ------------------------------ | -------- | ------ | ------ | ------ | ------ | ------ | ---------------- |
+| 0   | luderick | 1           | 20190618_1.mov_5fps_000001.jpg | 0        | 0      | 76     | 624    | 1003   | 625872 | "[[5, 76, ...]]" |
