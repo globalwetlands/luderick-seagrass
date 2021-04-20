@@ -1,11 +1,14 @@
 # Annotated videos of luderick from estuaries in southeast Queensland, Australia
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
+[![DOI][doi-shield]][doi-url]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+[doi-shield]: https://img.shields.io/badge/DOI-10.1594%2FPANGAEA.926930-blue
+[doi-url]: https://doi.org/10.1594/PANGAEA.926930
 
-![](luderick-example.jpg)
+![example dataset image](luderick-example.jpg)
 
 ## Overview
 
