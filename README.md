@@ -31,8 +31,9 @@ This dataset includes 9429 annotations and 4280 images which can be used for tra
 [jack evans b videos]: https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/videos/OmKwIVpe-.zip
 [tallebudgera videos]: https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/videos/4bUBoZmvV.zip
 
-> **Images are included in a ZIP archive which can be downloaded from the following URL:**  
-> https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/luderick-seagrass.zip
+> **Images are included in a ZIP archive which can be downloaded from either of the following:**  
+> * https://download.pangaea.de/dataset/926930/files/Fish_automated_identification_and_counting.zip
+> * https://globalwetlands.blob.core.windows.net/globalwetlands-public/datasets/luderick-seagrass/luderick-seagrass.zip
 
 Each annotation includes object instance annotations which consist of the following key fields: Labels are provided as a common name: either "luderick" for _Girella tricuspidata_ or "bream" for _Acanthopagrus australis_; Bounding boxes that enclose the species in each frame are provided in "[x, y, width, height]" format, in pixel units; Segmentation masks which outline the species as a polygon are provided as a list of pixel coordinates in the format "[x, y, x, y, ...]"; The corresponding image is provided as an image filename. All image coordinates (bounding box and segmentation masks) are measured from the top left image corner and are 0-indexed.
 
