@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this data repository, please cite it as below."
+authors:
+- family-names: "Ditria"
+  given-names: "Ellen M"
+- family-names: "Connolly"
+  given-names: "Rod M"
+  orcid: "https://orcid.org/0000-0001-6223-1291"
+- family-names: "Jinks"
+  given-names: "Eric L"
+  orcid: "https://orcid.org/0000-0003-2507-2070"
+- family-names: "Lopez-Marcano"
+  given-names: "Sebastian"
+title: "Annotated video footage for automated identification and counting of fish in unconstrained marine environments"
+version: 1.0.0
+doi: 10.1594/PANGAEA.926930
+date-released: 2021-04-21
+url: "https://doi.org/10.1594/PANGAEA.926930"
