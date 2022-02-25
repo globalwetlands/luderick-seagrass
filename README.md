@@ -14,6 +14,8 @@
 
 This dataset comprises of annotated footage of _Girella tricuspidata_ in two estuary systems in south East Queensland, Australia. This data is suitable for a range of classification and object detection research in unconstrained underwater environments. The raw data was obtained using submerged action cameras (Haldex Sports Action Cam HD 1080p) to collect video footage in the Tweed River estuary in southeast Queensland (-28.169438, 153.547594), between February and July 2019. Additional footage was collected from seagrass meadows in a separate estuary system in Tallebudgera Creek (-28.109721, 153.448975). Each sampling day, six cameras were deployed for 1 h over a variety of seagrass patches; the angle and placement of cameras was varied among deployment to ensure a variety of backgrounds and fish angles. Videos were trimmed for training to contain only footage of luderick (the target species for the study) and split into 5 frames per second.
 
+Full data reports can be found here: https://doi.org/10.3389/fmars.2021.629485
+
 ## Dataset presentation
 
 This dataset includes 9429 annotations and 4280 images which can be used for training object detection deep learning models and other related computer vision tasks. The dataset is organised into 3 sub-datasets that have been allocated for training, test and novel test purposes.
